@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: #f9f9f9;
+}
+
+#container {
+	width: 600px;
+	margin: 50px auto 0 auto;
+	text-align:center;
+}
+
+#portfolio {
+	width: 600px;
+	margin: 20px 0 0 0;
+}
+
+#portfolio ul li {
+	display:inline;
+}
+
+
+#portfolioDisplay {
+	width: 600px;
+	margin-top:15px;
+	font-family: arial;
+	font-size: 14px;
+	color: #666;
+	text-shadow: 0.1em 0.1em #ececec;
+}
+
+
+#portfolioDisplay .thumbs img{
+	padding:5px;
+	margin-top:10px;	
+}
+
+#networks img{
+	padding: 5px 15px 5px 15px;
+	margin-top:0px;	
+}
+
+#contact{
+	text-align:left;
+	margin: 0 auto 0 auto;
+	width:225px;	
+}
+
+#contactinfo{
+	float:right;
+	width:175px;
+	}
+
+#contactinfo li{
+	font-size: 12px;
+	margin-top:16px;
+	margin-left:10px;
+	height:36px;
+		}
+	
+#contacticons{
+	float:left;
+	width:50px;
+		}
+#clear{
+	clear:both;	
+}
+	
+	
+	
+	
+	
+	
+	
