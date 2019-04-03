@@ -26,62 +26,54 @@
 </head>
 
 <body>
-<div id="container">
-<a href="http://www.jochemvlug.nl" title="Home"><img src="images/logo.png" border="0px" alt="Jochem Vlug" /></a>
-<div id="portfolio">
-  <ul>
-    <li><a href="#networks" onclick="hideItem('networks');"><img src="images/networks.jpg" alt="networks" /></a></li>
-    <li><a href="#about" onclick="hideItem('about');"><img src="images/about.jpg" alt="about" /></a></li>
-    <li><a href="#contact" onclick="hideItem('contact');"><img src="images/contact.jpg" alt="contact" /></a></li>
-  </ul>
-</div>
-<img src="images/seperator.png" alt="seperator"/>
-<div id="portfolioDisplay">
-  <div id="networks"> <a name="networks"></a> <a href="http://open.spotify.com/user/jochem285" target="_blank"><img src="images/social/spotify.png" alt="Spotify" title="Spotify" /></a><a href="http://www.facebook.com/jochem285" target="_blank"><img src="images/social/facebook.png" alt="Facebook" title="Facebook" /></a><a href="http://nl.linkedin.com/pub/jochem-vlug/29/8a4/a41" target="_blank"><img src="images/social/linkedin.png" alt="LinkedIn" title="LinkedIn" /></a><br/>
-    <a href="http://www.last.fm/user/DJFastPodcast" target="_blank"><img src="images/social/lastfm.png" alt="LastFM" title="LastFM" /></a><a href="https://www.flickr.com/photos/jh-v/" target="_blank"><img src="images/social/flickr.png" alt="Flickr" title="Flickr" /></a><a href="http://soundcloud.com/jorgepronto" target="_blank"><img src="images/social/soundcloud.png" alt="Soundcloud" title="Soundcloud" /></a> </div>
-  <div class="thumbs"></div>
-  <div id="about"> <a name="about"></a> Welcome to my portfolio! My name is Jochem and<br/>
-    I am a MSc student at the University of Technology in Delft.<br/>
-    In my spare time I like to make music, film, photos, websites and other arts.<br />
-    If you need help with any ICT related problems, I'm your guy.<br/>
-    Need help with a project, want to collab or need my advice?<br />
-    Feel free to contact me by sending me an email.<br/>
-    <br />
+<div id="container"> <a href="http://www.jochemvlug.nl" title="Home"><img src="images/logo.png" border="0px" alt="Jochem Vlug" /></a>
+  <div id="portfolio">
+    <ul>
+      <li><a href="#networks" onclick="hideItem('networks');"><img src="images/networks.jpg" alt="networks" /></a></li>
+      <li><a href="#about" onclick="hideItem('about');"><img src="images/about.jpg" alt="about" /></a></li>
+      <li><a href="#contact" onclick="hideItem('contact');"><img src="images/contact.jpg" alt="contact" /></a></li>
+    </ul>
   </div>
-  <div class="thumbs"></div>
-  <div id="contact"> <a name="contact"></a>
-    <div id="contactinfo">
-      <ul>
-        <li>jochemvlug [at] hotmail [dot] com</li>
-        <li>http://www.jh-v.nl</li>
-        <li><a href="/portfolio.html">Have a look at my website portfolio!</a></li>
-        <li>Contact me for my resume!</li>
-      </ul>
-    </div>
-    <div id="contacticons"> <img src="images/sm-mail.jpg" alt="e-mail" title="e-mail" /><br/>
-      <img src="images/sm-saf.jpg" alt="personal site" title="personal site" /><br/>
-      <img src="images/sm-ilc.jpg" alt="portfolio" title="portfolio" /><br/>
+  <img src="images/seperator.png" alt="seperator"/>
+  <div id="portfolioDisplay">
+    <div id="networks"> <a name="networks"></a> <a href="http://open.spotify.com/user/jochem285" target="_blank"><img src="images/social/spotify.png" alt="Spotify" title="Spotify" /></a><a href="http://www.facebook.com/jochem285" target="_blank"><img src="images/social/facebook.png" alt="Facebook" title="Facebook" /></a><a href="http://nl.linkedin.com/pub/jochem-vlug/29/8a4/a41" target="_blank"><img src="images/social/linkedin.png" alt="LinkedIn" title="LinkedIn" /></a><br/>
+      <a href="http://www.last.fm/user/DJFastPodcast" target="_blank"><img src="images/social/lastfm.png" alt="LastFM" title="LastFM" /></a><a href="https://www.flickr.com/photos/jh-v/" target="_blank"><img src="images/social/flickr.png" alt="Flickr" title="Flickr" /></a><a href="http://soundcloud.com/jorgepronto" target="_blank"><img src="images/social/soundcloud.png" alt="Soundcloud" title="Soundcloud" /></a> </div>
+    <div id="contact"> <a name="contact"></a>
+      <div id="contactinfo">
+        <ul>
+          <li>jochemvlug [at] hotmail [dot] com</li>
+          <li>http://www.jh-v.nl</li>
+          <li><a href="/portfolio.html">Have a look at my website portfolio!</a></li>
+        </ul>
+      </div>
+      <div id="contacticons"> <img src="images/sm-mail.jpg" alt="e-mail" title="e-mail" /><br/>
+        <img src="images/sm-saf.jpg" alt="personal site" title="personal site" /><br/>
+        <img src="images/sm-ilc.jpg" alt="portfolio" title="portfolio" /><br/>
+      </div>
       <div id="clear"></div>
+    </div>
+    <div id="about"> <a name="about"></a> Welcome to my portfolio! My name is Jochem and<br/>
+      I am a MSc student at the University of Technology in Delft.<br/>
+      In my spare time I like to make music, film, photos, websites and other arts.<br />
+      If you need help with any ICT related problems, I'm your guy.<br/>
+      Need help with a project, want to collab or need my advice?<br />
+      Feel free to contact me by sending me an email.<br/>
+      <br />
     </div>
   </div>
   <script type="text/javascript">
-<!--
-
-	var currentItem = 'networks';
-    $('#contact').fadeOut(1);
+	var currentItem = 'networks';  
     $('#about').fadeOut(1);
+	$('#contact').fadeOut(1);
   function hideItem(itemName) {
     if (itemName == currentItem) return;
     $('#'+currentItem).fadeOut("def", function () { showItem(itemName) });
   }
-
   function showItem(itemName) {
     currentItem = itemName;
     $('#'+currentItem).fadeIn("def");
   }
-
--->
-		</script> 
+</script> 
 </div>
 </body>
 </html>
